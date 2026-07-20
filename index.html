@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="tr"><head>
+<meta name="google-site-verification" content="iE7a60sVZY_wG0PvTm83BOb-vAxEVtw1qtKhmrc9Dx4" /><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260717-05-8209e4e"}');</script><script src="/_sdk/f432b76fb310b513.telemetry_sdk.js" integrity="sha512-9FJQ55EKmmqhyyik8BhrMVfm0+iYYfb8uOlRsjtkxJMEI97qOVEI4PnHohDjQAtvAep0IOEpdQ64eki0sz62ug=="></script>
+  <script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260717-05-8209e4e"}');</script>
+  <script src="/_sdk/f432b76fb310b513.telemetry_sdk.js" integrity="sha512-9FJQ55EKmmqhyyik8BhrMVfm0+iYYfb8uOlRsjtkxJMEI97qOVEI4PnHohDjQAtvAep0IOEpdQ64eki0sz62ug=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yaman Elektronik</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Space+Mono:wght@700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0f1c3f;
+      --panel: #162a5b;
+      --panel-2: #1b3672;
+      --electric: #2979ff;
+      --mint: #25d366;
+      --muted: #b7c6dd;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      font-family: "DM Sans", sans-serif;
+      background: var(--navy);
+      color: #fff;
+    }
+    .app-shell {
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 88% 4%, rgba(41,121,255,.24), transparent 25rem),
+        radial-gradient(circle at 8% 57%, rgba(37,211,102,.08), transparent 20rem),
+        #0f1c3f;
+    }
+    .topline {
+      height: 5px;
+      background: linear-gradient(90deg, #25d366, #2979ff 55%, #25d366);
+    }
+    .brand-mark {
+      width: 60px; height: 60px; flex: 0 0 60px;
+      display: grid; place-items: center;
+      border: 2px solid rgba(255,255,255,.85);
+      border-radius: 16px;
+      font: 700 27px "Space Mono", monospace;
+      background: linear-gradient(135deg, #2459c5, #2979ff);
+      box-shadow: 0 10px 26px rgba(0,0,0,.24);
+    }
+    .tech-grid {
+      background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    .service-card {
+      border: 1px solid rgba(150,185,255,.17);
+      border-left: 4px solid var(--electric);
+      background: rgba(22,42,91,.89);
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+    .service-card:hover, .service-card:focus-within {
+      transform: translateY(-6px);
+      border-color: #5d9cff;
+      box-shadow: 0 18px 34px rgba(0,0,0,.25);
+    }
+    .service-image { transition: transform .45s ease, filter .3s ease; }
+    .service-card:hover .service-image { transform: scale(1.05); filter: brightness(1.12); }
+    .service-image-wrap { overflow: hidden; }
+    .spec-pill {
+      border: 1px solid rgba(255,255,255,.2);
+      background: rgba(255,255,255,.08);
+    }
+    .contact-panel {
+      background: linear-gradient(135deg, rgba(27,54,114,.96), rgba(15,28,63,.98));
+      border: 1px solid rgba(129,174,255,.26);
+      box-shadow: 0 18px 42px rgba(0,0,0,.25);
+    }
+    .focus-ring:focus-visible {
+      outline: 3px solid #fff;
+      outline-offset: 4px;
+    }
+    .float-whatsapp {
+      position: fixed; right: 22px; bottom: 22px; z-index: 30;
+      width: 60px; height: 60px; display: grid; place-items: center;
+      border-radius: 999px; background: #25d366;
+      color: white; box-shadow: 0 10px 30px rgba(0,0,0,.38);
+      transition: transform .2s ease, background .2s ease;
+    }
+    .float-whatsapp:hover { transform: scale(1.08); background: #128c7e; }
+    .reveal { animation: rise .65s both ease-out; }
+    .reveal-2 { animation: rise .65s .12s both ease-out; }
+    .reveal-3 { animation: rise .65s .22s both ease-out; }
+    @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+  <script src="/_sdk/e3937a0574eb2d69.data_sdk.js" type="text/javascript" integrity="sha512-xbp/ACqEQy1aDxYMtXTrR3y5MUbzxuggRR/9sD48Gl4VhLMMCiAHsxMaFV6DTdeBpR6ymF+t2zhPKYkWM3+Jfw=="></script>
+  <script src="/_sdk/9432170dbd2ae0df.resizing_sdk.js" type="text/javascript" integrity="sha512-FeT+58sb1f9ejWPWFjCbJvTT+SDwGV+ngrHUnlO7TWEOoqwOLj6p256kO3vOL7DIWl1cIgrobiof8v2bOigwPg=="></script>
+  <style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.-inset-3{inset:-0.75rem}.mx-auto{margin-left:auto;margin-right:auto}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.mt-7{margin-top:1.75rem}.mt-8{margin-top:2rem}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.h-1{height:0.25rem}.h-2{height:0.5rem}.h-40{height:10rem}.h-5{height:1.25rem}.h-56{height:14rem}.h-8{height:2rem}.h-full{height:100%}.w-16{width:4rem}.w-2{width:0.5rem}.w-5{width:1.25rem}.w-8{width:2rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-6xl{max-width:72rem}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-7{gap:1.75rem}.overflow-hidden{overflow:hidden}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-blue-300\/20{border-color:rgb(147 197 253 / 0.2)}.border-blue-300\/35{border-color:rgb(147 197 253 / 0.35)}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/15{border-color:rgb(255 255 255 / 0.15)}.bg-blue-400{--tw-bg-opacity:1;background-color:rgb(96 165 250 / var(--tw-bg-opacity, 1))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.bg-blue-500\/20{background-color:rgb(59 130 246 / 0.2)}.bg-green-400{--tw-bg-opacity:1;background-color:rgb(74 222 128 / var(--tw-bg-opacity, 1))}.bg-white\/50{background-color:rgb(255 255 255 / 0.5)}.object-cover{object-fit:cover}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.p-7{padding:1.75rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-7{padding-top:1.75rem;padding-bottom:1.75rem}.py-9{padding-top:2.25rem;padding-bottom:2.25rem}.pb-14{padding-bottom:3.5rem}.pt-12{padding-top:3rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.text-sm{font-size:0.875rem;line-height:1.25rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-\[\.16em\]{letter-spacing:.16em}.tracking-\[\.18em\]{letter-spacing:.18em}.tracking-tight{letter-spacing:-0.025em}.text-blue-300{--tw-text-opacity:1;color:rgb(147 197 253 / var(--tw-text-opacity, 1))}.text-green-400{--tw-text-opacity:1;color:rgb(74 222 128 / var(--tw-text-opacity, 1))}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.blur-xl{--tw-blur:blur(24px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:brightness-110:hover{--tw-brightness:brightness(1.1);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}@media (min-width: 640px){.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}}@media (min-width: 768px){.md\:h-64{height:16rem}.md\:grid-cols-\[1\.15fr_\.85fr\]{grid-template-columns:1.15fr .85fr}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}.md\:justify-between{justify-content:space-between}.md\:p-10{padding:2.5rem}.md\:p-9{padding:2.25rem}.md\:py-16{padding-top:4rem;padding-bottom:4rem}.md\:py-9{padding-top:2.25rem;padding-bottom:2.25rem}.md\:pt-12{padding-top:3rem}.md\:pt-16{padding-top:4rem}.md\:text-right{text-align:right}.md\:text-base{font-size:1rem;line-height:1.5rem}}@media (min-width: 1024px){.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}</style>
+  <script src="/_sdk/e3937a0574eb2d69.data_sdk.js" type="text/javascript" integrity="sha512-xbp/ACqEQy1aDxYMtXTrR3y5MUbzxuggRR/9sD48Gl4VhLMMCiAHsxMaFV6DTdeBpR6ymF+t2zhPKYkWM3+Jfw=="></script>
+  <script src="/_sdk/b7bbbe551ba4f8f5.editing_sdk.js" type="text/javascript" integrity="sha512-h06pMz6KcVo4Wjvoggb4sS5DZpb55bTriAzBmA0YwbkBA3z2ZXl8CBEbCWT+/fAsm0SwDejJ7jJHOZsLZKqPoQ=="></script>
+  <script src="/_sdk/9432170dbd2ae0df.resizing_sdk.js" type="text/javascript" integrity="sha512-FeT+58sb1f9ejWPWFjCbJvTT+SDwGV+ngrHUnlO7TWEOoqwOLj6p256kO3vOL7DIWl1cIgrobiof8v2bOigwPg=="></script>
+ </head>
+ <body data-template-id="__page-root" style="background: rgb(15, 28, 63);" data-html-import-id="html-import-0">
+  <div class="app-shell canva-container" data-html-import-id="html-import-1" data-template-id="div-0" style="background: rgb(15, 28, 63);">
+   <div class="topline" data-html-import-id="html-import-2"></div>
+   <header class="tech-grid border-b border-blue-300/20 py-8" data-html-import-id="html-import-3">
+    <div class="w-full max-w-6xl mx-auto px-5 flex flex-col items-center gap-6" data-html-import-id="html-import-4">
+     <div class="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8 reveal" data-html-import-id="html-import-5">
+      <div data-template-id="div-1" class="canva-container flex items-center justify-center p-3 rounded-2xl bg-slate-900/40 border border-blue-500/30 shadow-[0_0_20px_rgba(41,121,255,0.2)]" style="color: rgb(41, 211, 255); background: linear-gradient(135deg, rgb(36, 89, 197), rgb(41, 121, 255));" data-html-import-id="html-import-6">
+       <svg class="w-16 h-16" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M25 35 L44 50 L44 75" stroke="#2979ff"></path> <path d="M75 35 L56 50 L56 75" stroke="#2979ff"></path> <path d="M50 50 L50 25" stroke="#25d366"></path> <path d="M20 50 L20 65 L40 75" stroke="rgba(41,121,255,0.3)" stroke-width="3"></path> <circle cx="25" cy="35" r="5" fill="#2979ff"></circle> <circle cx="75" cy="35" r="5" fill="#2979ff"></circle> <circle cx="50" cy="25" r="5" fill="#25d366"></circle> <circle cx="44" cy="75" r="5" fill="#2979ff"></circle> <circle cx="56" cy="75" r="5" fill="#2979ff"></circle>
+       </svg>
+      </div>
+      <div data-html-import-id="html-import-7" class="flex flex-col items-center sm:items-start pl-0 sm:pl-5 border-t sm:border-t-0 sm:border-l border-blue-500/20 pt-4 sm:pt-0">
+       <h1 data-template-id="h1-2" class="canva-text uppercase font-extrabold tracking-wider leading-none canva-text text-center sm:text-left" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 56px; text-shadow: 0 0 15px rgba(41,121,255,0.5);" data-html-import-id="html-import-8">yaman</h1>
+       <p data-template-id="p-3" class="canva-text mt-2 uppercase font-bold tracking-[.25em] canva-text text-center sm:text-left" style="color: rgb(93, 156, 255); font-weight: 700; font-style: normal; font-size: 24px;" data-html-import-id="html-import-9">ELEKTRONİK</p>
+      </div>
+     </div>
+     <div class="w-full flex flex-col md:flex-row items-center justify-between gap-4 border-t border-blue-500/10 pt-6 mt-2 reveal-2" data-html-import-id="html-import-10">
+      <p data-template-id="p-4" class="canva-text text-sm md:text-base italic text-center md:text-left canva-text" style="color: rgb(183, 198, 221); font-weight: 400; font-style: normal; font-size: 16px;" data-html-import-id="html-import-11">Teknolojide çözüm ortağınız!</p>
+      <div class="flex items-center gap-3 justify-center md:justify-end" data-html-import-id="html-import-header-buttons">
+       <a data-template-id="a-5" class="canva-button focus-ring inline-flex items-center gap-2 rounded-full px-5 py-3 font-bold no-underline transition hover:brightness-110 canva-link" href="tel:+905057861047" style="background: rgb(41, 121, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;" data-html-import-id="html-import-12">0505 786 10 47</a> <a data-template-id="a-header-instagram" class="canva-button focus-ring inline-flex items-center justify-center rounded-full p-3 font-bold no-underline transition hover:brightness-110 canva-link" href="https://instagram.com/yamanlzr" target="_blank" rel="noopener noreferrer" aria-label="Instagram'da bizi takip edin" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: rgb(255, 255, 255);" data-html-import-id="html-import-header-ig"><i data-lucide="instagram" class="w-5 h-5"></i></a>
+      </div>
+     </div>
+    </div>
+   </header>
+   <main data-html-import-id="html-import-13">
+    <section class="w-full max-w-6xl mx-auto px-5 pt-12 md:pt-16" data-html-import-id="html-import-28">
+     <div class="text-center reveal-3" data-html-import-id="html-import-29">
+      <p data-template-id="p-14" class="canva-text uppercase tracking-[.18em] text-sm font-bold canva-text" style="color: rgb(114, 167, 255); font-weight: 700; font-style: normal; font-size: 16px;" data-html-import-id="html-import-30">HİZMETLERİMİZ</p>
+      <h2 data-template-id="h2-15" class="canva-text mt-2 font-extrabold canva-text" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 24px;" data-html-import-id="html-import-31">Tamir, Üretim ve Kişiye Özel Çözümler</h2>
+      <div class="mx-auto mt-4 h-1 w-16 rounded-full bg-blue-500 canva-container" data-html-import-id="html-import-32" data-template-id="div-16" style="background: rgb(59, 130, 246);"></div>
+     </div>
+     <div class="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-4" data-html-import-id="html-import-33">
+      <article data-template-id="article-17" class="canva-card service-card rounded-xl overflow-hidden flex flex-col justify-between" style="background: rgb(22, 42, 91);" data-html-import-id="html-import-34">
+       <div data-html-import-id="html-import-35">
+        <div class="service-image-wrap h-40" data-html-import-id="html-import-36">
+         <img data-template-id="img-18" loading="lazy" class="canva-image service-image w-full h-full object-cover canva-image" data-html-import-id="html-import-37" src="https://images.pexels.com/photos/6755075/pexels-photo-6755075.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Tornavida ile akıllı telefon tamiri yapan teknisyenin yakın çekimi">
+        </div>
+        <div class="p-5" data-html-import-id="html-import-38">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="smartphone" class="lucide lucide-smartphone w-5 h-5 text-blue-300" data-html-import-id="html-import-39" data-template-id="svg-19"><rect width="14" height="20" x="5" y="2" rx="2" ry="2" data-html-import-id="html-import-40"></rect><path d="M12 18h.01" data-html-import-id="html-import-41"></path>
+         </svg>
+         <h3 data-template-id="h3-20" class="canva-text mt-3 font-bold canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;" data-html-import-id="html-import-42">Telefon &amp; Tablet Tamiri</h3>
+         <p data-template-id="p-21" class="canva-text mt-2 text-sm leading-relaxed canva-text" style="color: rgb(183, 198, 221); font-weight: 400; font-style: normal; font-size: 16px;" data-html-import-id="html-import-43">Ekran, batarya, şarj soketi, tabletler ve yazılımsal arızalar için profesyonel çözümler.</p>
+        </div>
+       </div>
+      </article>
+      <article data-template-id="article-27" class="canva-card service-card rounded-xl overflow-hidden flex flex-col justify-between" style="background: rgb(22, 42, 91);" data-html-import-id="html-import-52">
+       <div data-html-import-id="html-import-53">
+        <div class="service-image-wrap h-40" data-html-import-id="html-import-54">
+         <img data-template-id="img-28" loading="lazy" class="canva-image service-image w-full h-full object-cover canva-image" data-html-import-id="html-import-55" src="https://images.pexels.com/photos/33395483/pexels-photo-33395483.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Ağaçlarla çevrili şehir ortamında park edilmiş elektrikli bisikletler">
+        </div>
+        <div class="p-5" data-html-import-id="html-import-56">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="bike" class="lucide lucide-bike w-5 h-5 text-blue-300" data-html-import-id="html-import-57" data-template-id="svg-29"><circle cx="18.5" cy="17.5" r="3.5" data-html-import-id="html-import-58"></circle><circle cx="5.5" cy="17.5" r="3.5" data-html-import-id="html-import-59"></circle><circle cx="15" cy="5" r="1" data-html-import-id="html-import-60"></circle><path d="M12 17.5V14l-3-3 4-3 2 3h2" data-html-import-id="html-import-61"></path>
+         </svg>
+         <h3 data-template-id="h3-30" class="canva-text mt-3 font-bold canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;" data-html-import-id="html-import-62">Elektrikli Bisiklet &amp; Scooter</h3>
+         <p data-template-id="p-31" class="canva-text mt-2 text-sm leading-relaxed canva-text" style="color: rgb(183, 198, 221); font-weight: 400; font-style: normal; font-size: 16px;" data-html-import-id="html-import-63">Mekanik bakım, elektronik kart, batarya yenileme ve periyodik kontrol hizmetleri.</p>
+        </div>
+       </div>
+      </article>
+      <article data-template-id="article-32" class="canva-card service-card rounded-xl overflow-hidden flex flex-col justify-between" style="background: rgb(22, 42, 91);" data-html-import-id="html-import-64">
+       <div data-html-import-id="html-import-65">
+        <div class="service-image-wrap h-40" data-html-import-id="html-import-66">
+         <img data-template-id="img-33" loading="lazy" class="canva-image service-image w-full h-full object-cover canva-image" data-html-import-id="html-import-67" src="https://images.pexels.com/photos/7254428/pexels-photo-7254428.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Ahşap parça işleyen CNC lazer kazıma makinesinin yakın çekimi">
+        </div>
+        <div class="p-5" data-html-import-id="html-import-68">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="scan-line" class="lucide lucide-scan-line w-5 h-5 text-blue-300" data-html-import-id="html-import-69" data-template-id="svg-34"><path d="M3 7V5a2 2 0 0 1 2-2h2" data-html-import-id="html-import-70"></path><path d="M17 3h2a2 2 0 0 1 2 2v2" data-html-import-id="html-import-71"></path><path d="M21 17v2a2 2 0 0 1-2 2h-2" data-html-import-id="html-import-72"></path><path d="M7 21H5a2 2 0 0 1-2-2v-2" data-html-import-id="html-import-73"></path><line x1="7" x2="17" y1="12" y2="12" data-html-import-id="html-import-74"></line>
+         </svg>
+         <h3 data-template-id="h3-35" class="canva-text mt-3 font-bold canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;" data-html-import-id="html-import-75">Lazer Kazıma</h3>
+         <p data-template-id="p-36" class="canva-text mt-2 text-sm leading-relaxed canva-text" style="color: rgb(183, 198, 221); font-weight: 400; font-style: normal; font-size: 16px;" data-html-import-id="html-import-76">Ahşap, metal ve seçili yüzeylere isim, logo ve özel tasarım lazer kazıma.</p>
+        </div>
+       </div>
+      </article>
+      <article data-template-id="article-37" class="canva-card service-card rounded-xl overflow-hidden flex flex-col justify-between" style="background: rgb(22, 42, 91);" data-html-import-id="html-import-77">
+       <div data-html-import-id="html-import-78">
+        <div class="service-image-wrap h-40" data-html-import-id="html-import-79">
+         <img data-template-id="img-38" loading="lazy" class="canva-image service-image w-full h-full object-cover canva-image" data-html-import-id="html-import-80" src="https://images.pexels.com/photos/3493047/pexels-photo-3493047.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Raf üzerinde grafik tasarımlı seramik kupalar">
+        </div>
+        <div class="p-5" data-html-import-id="html-import-81">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="coffee" class="lucide lucide-coffee w-5 h-5 text-blue-300" data-html-import-id="html-import-82" data-template-id="svg-39"><path d="M17 8h1a4 4 0 1 1 0 8h-1" data-html-import-id="html-import-83"></path><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z" data-html-import-id="html-import-84"></path><line x1="6" x2="6" y1="2" y2="4" data-html-import-id="html-import-85"></line><line x1="10" x2="10" y1="2" y2="4" data-html-import-id="html-import-86"></line><line x1="14" x2="14" y1="2" y2="4" data-html-import-id="html-import-87"></line>
+         </svg>
+         <h3 data-template-id="h3-40" class="canva-text mt-3 font-bold canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;" data-html-import-id="html-import-88">Bardak &amp; Plaka Baskı</h3>
+         <p data-template-id="p-41" class="canva-text mt-2 text-sm leading-relaxed canva-text" style="color: rgb(183, 198, 221); font-weight: 400; font-style: normal; font-size: 16px;" data-html-import-id="html-import-89">Kişiye özel bardak, plaka ve hediyelik baskı seçenekleriyle tasarımlarınız hayat bulur.</p>
+        </div>
+       </div>
+      </article>
+      <article data-template-id="article-42" class="canva-card service-card rounded-xl overflow-hidden flex flex-col justify-between" style="background: rgb(22, 42, 91);" data-html-import-id="html-import-90">
+       <div data-html-import-id="html-import-91">
+        <div class="service-image-wrap h-40" data-html-import-id="html-import-92">
+         <img data-template-id="img-43" loading="lazy" class="canva-image service-image w-full h-full object-cover canva-image" data-html-import-id="html-import-93" src="https://images.pexels.com/photos/7703649/pexels-photo-7703649.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Tişört baskı işlemi yakın çekim">
+        </div>
+        <div class="p-5" data-html-import-id="html-import-94">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="shirt" class="lucide lucide-shirt w-5 h-5 text-blue-300" data-html-import-id="html-import-95" data-template-id="svg-44"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z" data-html-import-id="html-import-96"></path>
+         </svg>
+         <h3 data-template-id="h3-45" class="canva-text mt-3 font-bold canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;" data-html-import-id="html-import-97">Tişört &amp; Forma Baskısı</h3>
+         <p data-template-id="p-46" class="canva-text mt-2 text-sm leading-relaxed canva-text" style="color: rgb(183, 198, 221); font-weight: 400; font-style: normal; font-size: 16px;" data-html-import-id="html-import-98">Kişiye özel tasarım, logo ve numaralarla kaliteli tişört ve forma baskı çözümleri.</p>
+        </div>
+       </div>
+      </article>
+      <article data-template-id="article-47" class="canva-card service-card rounded-xl overflow-hidden flex flex-col justify-between" style="background: rgb(22, 42, 91);" data-html-import-id="html-import-99">
+       <div data-html-import-id="html-import-100">
+        <div class="service-image-wrap h-40" data-html-import-id="html-import-101">
+         <img data-template-id="img-48" loading="lazy" class="canva-image service-image w-full h-full object-cover canva-image" data-html-import-id="html-import-102" src="https://images.pexels.com/photos/31039955/pexels-photo-31039955.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Çiçek tasarımlı şık davetiye">
+        </div>
+        <div class="p-5" data-html-import-id="html-import-103">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail-open" class="lucide lucide-mail-open w-5 h-5 text-blue-300" data-html-import-id="html-import-104" data-template-id="svg-49"><path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6Z" data-html-import-id="html-import-105"></path><path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10" data-html-import-id="html-import-106"></path>
+         </svg>
+         <h3 data-template-id="h3-50" class="canva-text mt-3 font-bold canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;" data-html-import-id="html-import-107">Davetiye Baskısı</h3>
+         <p data-template-id="p-51" class="canva-text mt-2 text-sm leading-relaxed canva-text" style="color: rgb(183, 198, 221); font-weight: 400; font-style: normal; font-size: 16px;" data-html-import-id="html-import-108">Düğün, nişan, sünnet ve özel etkinlikleriniz için kaliteli ve şık davetiye baskı çözümleri.</p>
+        </div>
+       </div>
+      </article>
+      <article data-template-id="article-52" class="canva-card service-card rounded-xl overflow-hidden flex flex-col justify-between" style="background: rgb(22, 42, 91);" data-html-import-id="html-import-109">
+       <div data-html-import-id="html-import-110">
+        <div class="service-image-wrap h-40" data-html-import-id="html-import-111">
+         <img data-template-id="img-53" loading="lazy" class="canva-image service-image w-full h-full object-cover canva-image" data-html-import-id="html-import-112" src="https://images.pexels.com/photos/7657392/pexels-photo-7657392.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800" alt="Ofis masasında ahşap kaşeler">
+        </div>
+        <div class="p-5" data-html-import-id="html-import-113">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="printer" class="lucide lucide-printer w-5 h-5 text-blue-300" data-html-import-id="html-import-114" data-template-id="svg-54"><polyline points="6 9 6 2 18 2 18 9" data-html-import-id="html-import-115"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" data-html-import-id="html-import-116"></path><rect width="12" height="8" x="6" y="14" data-html-import-id="html-import-117"></rect>
+         </svg>
+         <h3 data-template-id="h3-55" class="canva-text mt-3 font-bold canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;" data-html-import-id="html-import-118">Kaşe Yapımı</h3>
+         <p data-template-id="p-56" class="canva-text mt-2 text-sm leading-relaxed canva-text" style="color: rgb(183, 198, 221); font-weight: 400; font-style: normal; font-size: 16px;" data-html-import-id="html-import-119">Şirket, şahıs ve resmi belgeleriniz için hızlı, kaliteli ve uzun ömürlü otomatik kaşe üretimi.</p>
+        </div>
+       </div>
+      </article>
+      <article data-template-id="article-57" class="canva-card service-card rounded-xl overflow-hidden flex flex-col justify-center" style="background: rgb(27, 54, 114);" data-html-import-id="html-import-120">
+       <div class="p-6" data-html-import-id="html-import-121">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="wrench" class="lucide lucide-wrench w-8 h-8 text-blue-300" data-html-import-id="html-import-122" data-template-id="svg-58"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" data-html-import-id="html-import-123"></path>
+        </svg>
+        <h3 data-template-id="h3-59" class="canva-text mt-4 font-bold canva-text" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 19px;" data-html-import-id="html-import-124">Teknik Servis</h3>
+        <p data-template-id="p-60" class="canva-text mt-2 text-sm leading-relaxed canva-text" style="color: rgb(183, 198, 221); font-weight: 400; font-style: normal; font-size: 16px;" data-html-import-id="html-import-125">Elektronik kontrol, arıza tespiti ve günlük hayatta kullandığınız cihazlar için güvenilir teknik destek.</p>
+        <div class="mt-5 flex gap-2" data-html-import-id="html-import-126">
+         <span class="w-2 h-2 rounded-full bg-green-400 canva-text" data-html-import-id="html-import-127" data-template-id="span-61" style="background: rgb(74, 222, 128);"></span> <span class="w-2 h-2 rounded-full bg-blue-400 canva-text" data-html-import-id="html-import-128" data-template-id="span-62" style="background: rgb(96, 165, 250);"></span> <span class="w-2 h-2 rounded-full bg-white/50 canva-text" data-html-import-id="html-import-129" data-template-id="span-63" style="background: rgba(255, 255, 255, 0.5);"></span>
+        </div>
+       </div>
+      </article>
+     </div>
+    </section>
+    <section class="w-full max-w-6xl mx-auto px-5 pt-8 md:pt-12" data-html-import-id="html-import-14">
+     <div data-template-id="battery-banner" class="canva-banner reveal-2 rounded-2xl p-6 md:p-9 border border-blue-300/35 shadow-2xl" style="background: linear-gradient(135deg, rgb(22, 42, 91), rgb(27, 54, 114));" data-html-import-id="html-import-15">
+      <div class="grid gap-7 md:grid-cols-[1.15fr_.85fr] md:items-center" data-html-import-id="html-import-16">
+       <div data-html-import-id="html-import-17">
+        <p data-template-id="p-6" class="canva-text text-sm font-bold tracking-[.16em] uppercase canva-text" style="color: rgb(114, 167, 255); font-weight: 700; font-style: normal; font-size: 16px;" data-html-import-id="html-import-18">ENERJİ ÇÖZÜMLERİ</p>
+        <h2 data-template-id="h2-7" class="canva-text mt-2 font-extrabold leading-tight canva-text" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 24px;" data-html-import-id="html-import-19">Uzun Menzilli LiFePO₄ Pil Yapılır</h2>
+        <p data-template-id="p-8" class="canva-text mt-4 max-w-2xl leading-relaxed canva-text" style="color: rgb(213, 226, 248); font-weight: 400; font-style: normal; font-size: 16px;" data-html-import-id="html-import-20">Elektrikli bisiklet ve scooter modelleri için yüksek performanslı, güvenli ve ihtiyacınıza özel batarya paketleri hazırlıyoruz.</p>
+        <div class="mt-6 flex flex-wrap gap-2" data-html-import-id="html-import-21">
+         <span data-template-id="span-9" class="canva-tag spec-pill rounded-full px-3 py-2 text-sm font-semibold canva-text" style="background: rgba(255, 255, 255, 0.08); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;" data-html-import-id="html-import-22">Akıllı BMS Koruması</span> <span data-template-id="span-10" class="canva-tag spec-pill rounded-full px-3 py-2 text-sm font-semibold canva-text" style="background: rgba(255, 255, 255, 0.08); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;" data-html-import-id="html-import-23">Yüksek Menzil</span> <span data-template-id="span-11" class="canva-tag spec-pill rounded-full px-3 py-2 text-sm font-semibold canva-text" style="background: rgba(255, 255, 255, 0.08); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;" data-html-import-id="html-import-24">Özel Paketleme</span>
+        </div>
+       </div>
+       <div class="relative" data-html-import-id="html-import-25">
+        <div class="absolute -inset-3 rounded-2xl bg-blue-500/20 blur-xl canva-container" data-html-import-id="html-import-26" data-template-id="div-12" style="background: rgba(59, 130, 246, 0.2);"></div><img data-template-id="img-13" loading="lazy" class="canva-image relative w-full h-56 md:h-64 rounded-xl object-cover border border-white/15 canva-image" data-html-import-id="html-import-27" src="https://images.pexels.com/photos/11951153/pexels-photo-11951153.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1280" alt="Elektrikli bisikletin arka bagajına monte edilmiş batarya">
+       </div>
+      </div>
+     </div>
+    </section>
+    <section class="w-full max-w-6xl mx-auto px-5 py-12 md:py-16" data-html-import-id="html-import-130">
+     <div data-template-id="one-stop-banner" class="canva-banner rounded-2xl px-6 py-9 text-center border border-white/10" style="background: linear-gradient(135deg, rgb(13, 35, 79), rgb(22, 42, 91));" data-html-import-id="html-import-131">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="zap" class="lucide lucide-zap mx-auto w-8 h-8 text-green-400" data-html-import-id="html-import-132" data-template-id="svg-64"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" data-html-import-id="html-import-133"></polygon>
+      </svg>
+      <h2 data-template-id="h2-65" class="canva-text mt-3 font-extrabold canva-text" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 24px;" data-html-import-id="html-import-134">Tüm İşleriniz TEK ADRESTE</h2>
+      <p data-template-id="p-66" class="canva-text mt-3 max-w-2xl mx-auto leading-relaxed canva-text" style="color: rgb(200, 215, 237); font-weight: 400; font-style: normal; font-size: 16px;" data-html-import-id="html-import-135">Elektronik cihaz onarımından enerji çözümlerine, kişiye özel baskıdan lazer kazımaya kadar ihtiyacınız olan hizmetler bir arada.</p>
+      <div class="mt-6 flex flex-wrap justify-center gap-2" data-html-import-id="html-import-136">
+       <span data-template-id="span-67" class="canva-tag rounded-full px-3 py-1.5 text-sm canva-text" style="background: rgb(41, 121, 255); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;" data-html-import-id="html-import-137">Telefon</span> <span data-template-id="span-68" class="canva-tag rounded-full px-3 py-1.5 text-sm canva-text" style="background: rgb(41, 121, 255); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;" data-html-import-id="html-import-138">Batarya</span> <span data-template-id="span-69" class="canva-tag rounded-full px-3 py-1.5 text-sm canva-text" style="background: rgb(41, 121, 255); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;" data-html-import-id="html-import-139">Lazer</span> <span data-template-id="span-70" class="canva-tag rounded-full px-3 py-1.5 text-sm canva-text" style="background: rgb(41, 121, 255); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;" data-html-import-id="html-import-140">Baskı</span> <span data-template-id="span-71" class="canva-tag rounded-full px-3 py-1.5 text-sm canva-text" style="background: rgb(41, 121, 255); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;" data-html-import-id="html-import-141">Davetiye</span> <span data-template-id="span-72" class="canva-tag rounded-full px-3 py-1.5 text-sm canva-text" style="background: rgb(41, 121, 255); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;" data-html-import-id="html-import-142">Kaşe</span>
+      </div>
+     </div>
+    </section>
+    <section class="w-full max-w-6xl mx-auto px-5 pb-14" data-html-import-id="html-import-143">
+     <div data-template-id="contact-panel" class="canva-panel contact-panel rounded-2xl p-7 md:p-10 text-center" style="background: linear-gradient(135deg, rgb(27, 54, 114), rgb(15, 28, 63));" data-html-import-id="html-import-144">
+      <p data-template-id="p-73" class="canva-text uppercase text-sm font-bold tracking-[.18em] canva-text" style="color: rgb(114, 167, 255); font-weight: 700; font-style: normal; font-size: 16px;" data-html-import-id="html-import-145">BİZE ULAŞIN</p>
+      <h2 data-template-id="h2-74" class="canva-text mt-2 font-extrabold canva-text" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 24px;" data-html-import-id="html-import-146">Teklif ve bilgi için arayın</h2><a data-template-id="a-75" class="canva-link focus-ring mt-5 inline-block font-extrabold no-underline canva-link" href="tel:+905057861047" style="color: rgb(37, 211, 102); font-weight: 800; font-style: normal; font-size: 32px;" data-html-import-id="html-import-147">0505 786 10 47</a>
+      <p data-template-id="p-76" class="canva-text mt-3 canva-text" style="color: rgb(200, 215, 237); font-weight: 400; font-style: normal; font-size: 16px;" data-html-import-id="html-import-148">WhatsApp üzerinden hızlıca mesaj gönderebilir, hizmetlerimiz hakkında bilgi alabilirsiniz.</p>
+      <div class="mt-4 flex items-center justify-center gap-2 max-w-lg mx-auto" data-html-import-id="html-import-address"><i data-lucide="map-pin" class="w-4 h-4 text-blue-300"></i>
+       <p data-template-id="p-address" class="canva-text" style="color: rgb(183, 198, 221); font-weight: 400; font-style: normal; font-size: 16px;">Fevzi Çakmak Mahallesi Kazım Karabekir Paşa Caddesi No:60/1A Torbalı, İzmir</p>
+      </div>
+      <div class="mt-7 flex flex-col justify-center gap-3 sm:flex-row" data-html-import-id="html-import-149">
+       <a data-template-id="a-77" class="canva-button focus-ring inline-flex justify-center items-center gap-2 rounded-lg px-6 py-3 font-bold no-underline transition hover:brightness-110 canva-link" href="https://wa.me/905057861047" target="_blank" rel="noopener noreferrer" style="background: rgb(37, 211, 102); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;" data-html-import-id="html-import-150">WhatsApp’tan Yazın</a> <a data-template-id="a-instagram" class="canva-button focus-ring inline-flex justify-center items-center gap-2 rounded-lg px-6 py-3 font-bold no-underline transition hover:brightness-110 canva-link" href="https://instagram.com/yamanlzr" target="_blank" rel="noopener noreferrer" style="background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;" data-html-import-id="html-import-instagram-button">Instagram'da Takip Et</a> <a data-template-id="a-78" class="canva-button focus-ring inline-flex justify-center items-center gap-2 rounded-lg px-6 py-3 font-bold no-underline transition hover:brightness-110 canva-link" href="https://www.google.com/maps/search/?api=1&amp;query=Yaman+Elektronik" target="_blank" rel="noopener noreferrer" style="background: rgb(41, 121, 255); color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;" data-html-import-id="html-import-151">Yol Tarifi Al</a>
+      </div>
+     </div>
+    </section>
+   </main>
+   <footer class="border-t border-white/10 py-7 text-center" data-html-import-id="html-import-152">
+    <p data-template-id="p-79" class="canva-text text-sm canva-text" style="color: rgb(183, 198, 221); font-weight: 400; font-style: normal; font-size: 16px;" data-html-import-id="html-import-153">© 2026 Yaman Elektronik · Teknolojide çözüm ortağınız</p>
+   </footer><a data-template-id="a-80" class="canva-button float-whatsapp focus-ring canva-link" href="https://wa.me/905057861047" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile iletişime geçin" style="background: rgb(37, 211, 102); color: rgb(255, 255, 255);" data-html-import-id="html-import-154">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="message-circle" class="lucide lucide-message-circle w-8 h-8" data-html-import-id="html-import-155"><path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z" data-html-import-id="html-import-156"></path>
+    </svg></a>
+  </div>
+  <script src="/_sdk/b7bbbe551ba4f8f5.editing_sdk.js" integrity="sha512-h06pMz6KcVo4Wjvoggb4sS5DZpb55bTriAzBmA0YwbkBA3z2ZXl8CBEbCWT+/fAsm0SwDejJ7jJHOZsLZKqPoQ==" data-html-import-id="html-import-157"></script>
+  <script data-html-import-id="html-import-158">
+    document.addEventListener("DOMContentLoaded", function () {
+      lucide.createIcons();
+    });
+  </script>
+ 
+</body></html>
